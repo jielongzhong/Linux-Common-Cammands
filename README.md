@@ -10,3 +10,7 @@ This is a repository to show users the most common used Linux commands or commbi
 - **grep keyword test.txt** outputs the content that contains the keyword in a specific file.
 - **md5sum \*.txt | cut -c1-32 | sort** calculates the checksum for all files and uses cut command to get first 32 characters and finally uses sort to put together duplicated files.
 
+
+#### Re-use Commands
+  
+
