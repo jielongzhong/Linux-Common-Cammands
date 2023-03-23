@@ -39,7 +39,7 @@ This is a learning notes to show users the most common used Linux commands or co
 #### Transform Text
 - **tr** can transform any characters
   - **echo desk | tr a-z A-Z** transform desk to DESK
-  - **echo hello python | tr " " "\n"** hello python will be output as two rows instead of one
+  - **echo hello python | tr " " "\\n"** hello python will be output as two rows instead of one
   - **echo hello python | tr -d '\t'** delete tabs and space, -d means delete
 - **awk and sed**
   - **echo image.jpg | sed 's/\.jpg/.png/' replace jpg with png
