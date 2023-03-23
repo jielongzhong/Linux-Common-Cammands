@@ -1,5 +1,5 @@
 # Linux-Common-Cammands
-This is a repository to show users the most common used Linux commands or commbined commands. Using Linux commands is my daily work. I read book <<Efficent Linux at the command line>> to review all the commands I used before and advance my abilities using other new techniques.
+This is a learning notes to show users the most common used Linux commands or commbined commands. Using Linux commands is my daily work. I read book <<Efficent Linux at the command line>> to review all the commands I used before and advance my abilities using other new techniques.
 
 
 #### Input, Output and Channel
@@ -9,6 +9,7 @@ This is a repository to show users the most common used Linux commands or commbi
 - **head -n3 test.txt** outputs the first few rows of the text content in a file.
 - **grep keyword test.txt** outputs the content that contains the keyword in a specific file.
 - **md5sum \*.txt | cut -c1-32 | sort** calculates the checksum for all files and uses cut command to get first 32 characters and finally uses sort to put together duplicated files.
+- **cut** command can be used to output one or multiple columns of the file. The definition of columns here: a) if the input consists of string (field), and the string was separated by tab character, we can cut the file using option **-f**. **-f2** means the seconf field of the string. b) another way is to use -c option to cut the string by characters. **-c1-3** outputs the first 3 characters.
 
 
 #### Re-use Commands
