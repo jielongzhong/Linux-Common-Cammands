@@ -12,6 +12,17 @@ This is a learning notes to show users the most common used Linux commands or co
 - **cut** command can be used to output one or multiple columns of the file. The definition of columns here: a) if the input consists of string (field), and the string was separated by tab character, we can cut the file using option **-f**. **-f2** means the seconf field of the string. b) another way is to use -c option to cut the string by characters. **-c1-3** outputs the first 3 characters.
 
 
-#### Re-use Commands
-  
+#### Generating Text
+- **cut -d: f1 /etc/passwd | sort** outputs all usernames being sorted
+- **cat \*.txt | wc -l** outputs all rows of the file
+- **date** outputs date and time according to the expected format
+  - date +%Y-%m-%d
+  - date +%H:%M:%S
+- **seq** outputs a digital sequence with a range. **seq 1 5** outputs 1 2 3 4 5.
+- Usage of brace in shell commands.
+  - echo {A..Z} | tr -d ' ' output A to Z and remove space
+  - echo {A..Z} | tr ' ' '\n' output A to Z vertically by replacing space with \\n
+  - echo {1..1000..100} outputs a sequence of numbers from 1 to 1000 with an interval 100
+  - **find** lists all files in a directory
+    - find /etc | head -n10 outputs the first 10 rows of the files in /etc
 
