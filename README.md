@@ -30,5 +30,7 @@ This is a learning notes to show users the most common used Linux commands or co
 - **grep**
   - **grep -w** output the result with the keyword 100% matched.
   - **grep -i** ignore case sensitive for letters
-  
+- **tail** outputs last few rows of a file
+  - **head -n6 test.txt | tail -n2** get the first 6 rows of the file and then get the last two rows content of these 6 rows (e.g. log investigation)
+  - 
 
