@@ -32,5 +32,17 @@ This is a learning notes to show users the most common used Linux commands or co
   - **grep -i** ignore case sensitive for letters
 - **tail** outputs last few rows of a file
   - **head -n6 test.txt | tail -n2** get the first 6 rows of the file and then get the last two rows content of these 6 rows (e.g. log investigation)
-  - 
+- **awk** a general command for text processing
+  - **awk '{print $2}' /etc/hosts** get the hostnames from hosts file, awk command uses $ to locate specific column in a file
+  - **df /data | awk '{print $3}'** check disk usage and get the third column content
+
+#### Transform Text
+- **tr** can transform any characters
+  - **echo desk | tr a-z A-Z** transform desk to DESK
+  - **echo hello python | tr " " "\n" hello python will be output as two rows instead of one
+  - **echo hello python | tr -d '\t'** delete tabs and space, -d means delete
+- **awk and sed**
+  - **echo image.jpg | sed 's/\.jpg/.png/' replace jpg with png
+  - **echo is Python wonderful | awk '{print $2, $1}' swap is and python, the output will be Python is wonderful
+  
 
