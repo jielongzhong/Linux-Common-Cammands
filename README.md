@@ -1,5 +1,5 @@
 # Linux-Common-Cammands
-This is a learning notes to show users the most common used Linux commands or commbined commands. Using Linux commands is my daily work. I read book <<Efficent Linux at the command line>> to review all the commands I used before and advance my abilities using other new techniques.
+This is a learning notes to show users the most common used Linux commands or commbined commands. Using Linux commands is my daily work. I read book \<\<Efficent Linux at the command line\>\> to review all the commands I used before and advance my abilities using other new techniques.
 
 
 #### Input, Output and Channel
