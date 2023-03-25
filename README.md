@@ -43,6 +43,7 @@ This is a learning notes to show users the most common used Linux commands or co
   - **echo hello python | tr -d '\t'** delete tabs and space, -d means delete
 - **awk and sed**
   - **echo image.jpg | sed \'s/\\.jpg/.png/\'** replace jpg with png
-  - **echo is Python wonderful | awk \'{print $2, $1}\'** swap is and python, the output will be Python is wonderful
+  - **echo is Python wonderful | awk \'{print $2, $1}\'** swaps 'is' and 'python', the output will be 'Python is wonderful'
+  - **seq 1 100 | awk '{s+=$1} END {print s}'** outputs 5050
   
 
