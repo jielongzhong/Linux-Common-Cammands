@@ -45,5 +45,7 @@ This is a learning notes to show users the most common used Linux commands or co
   - **echo image.jpg | sed \'s/\\.jpg/.png/\'** replace jpg with png
   - **echo is Python wonderful | awk \'{print $2, $1}\'** swaps 'is' and 'python', the output will be 'Python is wonderful'
   - **seq 1 100 | awk '{s+=$1} END {print s}'** outputs 5050
+  - **echo Hello Python | sed "s/python/django/"** nothing happens as the string does not match (case sensitive)
+  - **echo Hello Python | sed "s/python/django/i"** replace Python with Django, ignore case sentive by adding option /i
   
 
