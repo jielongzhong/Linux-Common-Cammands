@@ -51,8 +51,15 @@ This is a learning notes to show users the most common used Linux commands or co
   - **echo Hello Python | sed "s/l/L/g"** outputs HeLLo Python, replace all l with L
 - Limit the width of output string, **fold -w40 test.txt**
 
-#### Other Commands
-- 
+#### Others
+- shell is just a normal program
+- bash is the default shell for most of the Linux systems
+- **cd** is not a program but a built-in function of shell
+- using **export** to change a **local variable** to a **environment variable**
+- **cd dir && touch test.txt** only when the first command being executed successfully then touch will be executed
+- **cd dir || mkdir dir** if dir does not exist, then will create one
+- **diff /tmp/original-list /tmp/full-list** compare difference between two folders
+- **cat package.tar.gz | (mkdir -p /tmp/dir2 && cd /tmp/other && tar xzvf -)** pass the package data to tar command to extract files in another folder
 - 
   
 
