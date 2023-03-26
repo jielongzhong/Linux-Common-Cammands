@@ -9,7 +9,7 @@ This is a learning notes to show users the most common used Linux commands or co
 - **head -n3 test.txt** outputs the first few rows of the text content in a file.
 - **grep keyword test.txt** outputs the content that contains the keyword in a specific file.
 - **md5sum \*.txt | cut -c1-32 | sort** calculates the checksum for all files and uses cut command to get first 32 characters and finally uses sort to put together duplicated files.
-- **cut** command can be used to output one or multiple columns of the file. The definition of columns here: a) if the input consists of string (field), and the string was separated by tab character, we can cut the file using option **-f**. **-f2** means the seconf field of the string. b) another way is to use -c option to cut the string by characters. **-c1-3** outputs the first 3 characters.
+- **cut** command can be used to output one or multiple columns of the file. The definition of columns here: a) if the input consists of string (field), and the string was separated by tab character, we can cut the file using option **-f**. **-f2** means the seconf field of the string. b) another way is to use -c option to cut the string by characters. **-c1-3** outputs the first 3 characters. **-d** to define separator, e.g. **echo {1..5}.jpg | cut -d. -f1** outputs 1 to 5
 
 
 #### Commands for Generating Text
@@ -60,6 +60,8 @@ This is a learning notes to show users the most common used Linux commands or co
 - **cd dir || mkdir dir** if dir does not exist, then will create one
 - **diff /tmp/original-list /tmp/full-list** compare difference between two folders
 - **cat package.tar.gz | (mkdir -p /tmp/dir2 && cd /tmp/other && tar xzvf -)** pass the package data to tar command to extract files in another folder
-- 
-  
+- **shuf /usr/share/dict/words | head -n10** randomly echo 10 words
+- **$RANDOM** randomly get a number from 0 ~ 32767
+- **pwgen -N5 10** to generate a string with each having 10 characters
+- **yes 'shuf -n $RANDOM -o $(pwgen -N1 10).txt /usr/share/dict/words | head -n 100 | bash** to iteratively generate 100 files with each having a random name and random words in each file
 
