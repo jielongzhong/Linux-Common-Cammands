@@ -51,6 +51,10 @@ This is a learning notes to show users the most common used Linux commands or co
   - **echo Hello Python | sed "s/l/L/g"** outputs HeLLo Python, replace all l with L
 - Limit the width of output string, **fold -w40 test.txt**
 
+#### Processing Text Files
+- Find a specific file: **find $HOME -name python-world.txt -print**
+- find command is very slow as it searches everything in HOME directories, we can use **find $HOME -print > $HOME/.allfiles** to create a file list with the path in a text file and then use **grep keyword.txt $HOME/.allfiles** to search target file path. grep has better searching performance in a file than using find to search everything in a directory structure (Tree Structure).
+
 #### Others
 - shell is just a normal program
 - bash is the default shell for most of the Linux systems
@@ -64,4 +68,5 @@ This is a learning notes to show users the most common used Linux commands or co
 - **$RANDOM** randomly get a number from 0 ~ 32767
 - **pwgen -N5 10** to generate a string with each having 10 characters
 - **yes 'shuf -n $RANDOM -o $(pwgen -N1 10).txt /usr/share/dict/words | head -n 100 | bash** to iteratively generate 100 files with each having a random name and random words in each file
+- **cat /etc/passwd | cut -d: f1 | sort** echo the users listed in passwd file and sort them
 
